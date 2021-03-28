@@ -1,0 +1,85 @@
+body{
+  background: gray;
+  text-align: center;
+}
+h3{
+  margin-top: 40px;
+}
+.cross{
+  text-decoration: line-through;
+}
+li{
+  list-style-type: none;
+}
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  display: block;
+  margin: 0 auto;
+}
+body{
+  text-align: center;
+  background: url(../library2.jpg);
+  background-attachment: fixed;
+  font-size: 1.5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Cormorant Unicase', serif;
+}
+h1{
+  color: wheat;
+  margin: 0;
+}
+h2,
+h3{
+  color: #02eccf;
+  background: blanchedalmond;
+  display: inline-block;
+}
+img{
+  height: 15rem;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+td{
+  border: 1px solid black;
+  background: antiquewhite;
+  padding: 1rem;
+}
+th{
+  background: #008070;
+  padding: 1.5rem;
+}
+table{
+width: 90%;
+border: 3px solid black;
+margin: 5%;
+}
+input{
+  font-size: 2rem;
+  height: 3.5rem;
+  padding-left: 1rem;
+  border-radius: 5px;
+  background: antiquewhite;
+}
+button{
+  font-size: 2rem;
+  height: 3.5rem;
+  border-radius: 5px;
+  padding: 0 1rem;
+  background: antiquewhite;
+}
+button:hover{
+  background-color: #008070;
+}

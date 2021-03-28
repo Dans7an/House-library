@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>House Library</title>
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Welcome to the House Library?</h1>
+  <h2>Add a book</h2>
+
+  <form action="/library" method="POST">
+    <input type="text" placeholder="title" name="title">
+    <input type="text" placeholder="author" name="author">
+    <button type="submit">Submit</button>
+  </form>
+
+  <h3>Collection of Available Books</h3>
+  <table>
+<tbody>
+<tr>
+  <th>Book</th>
+  <th>Author</th>
+  <th>checkedOut</th>
+  <th>returned</th>
+  <th>Delete</th>
+</tr>
+
+  <!-- <ul class="messages"> -->
+  <% for(var i=0; i<library.length; i++) {%>
+    <tr class="message">
+      <% if(library[i].checkedOut) { %>
+      <td class="cross"><%= library[i].title %></td>
+      <td class="cross"><%= library[i].author %></td>
+<% } else { %>
+      <td><%= library[i].title %></td>
+      <td><%= library[i].author %></td>
+      <% } %>
+      <!-- <td><%= library[i].checkIn %></td> -->
+      <td><i class="fa fa-check-square" aria-hidden="true"></i></td>
+      <td><i class="fa fa-undo" aria-hidden="true"></i></td>
+      <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+    </tr>
+  <% } %>
+  <!-- </ul> -->
+</tbody>
+</table>
+
+
+  <script src="main.js"></script>
+
+</body>
+</html>
