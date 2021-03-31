@@ -1,11 +1,3 @@
-![21 Savage](public/21savage.jpg)
+## House library
 
-## Installation
-
-1. Clone repo
-2. run `npm install`
-
-## Usage
-
-1. run `npm run savage`
-2. Navigate to `localhost:3000`
+House Moses has a library app that keep track on the books that have been borrowed and returned to the library. App is built on express
